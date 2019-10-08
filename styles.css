@@ -1,0 +1,264 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.global-padding {
+  padding: 1vw;
+}
+
+.wrapper {
+  position: relative;
+  display: grid;
+  grid-template-areas: 
+    'header header'
+    'banner banner'
+    'about about'
+    'features features'
+    'pricing pricing'
+    'footer footer';
+  grid-template-rows: 100px 625px 250px 880px 600px 100px;
+  /*grid-template-columns: 1fr 100px;*/
+  grid-gap: 10px;
+  height: 100vh;
+  width: 70vw;
+  margin: auto;
+  margin-top: 3em;
+  font-family: 'Manjari', sans-serif;
+}
+
+/*.wrapper > div, .wrapper > article, .wrapper > footer {
+  background: red;
+}*/
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 100px;
+}
+
+.logo {
+  /*grid-area: logo;*/
+}
+
+.banner {
+  grid-area: banner;
+}
+
+.about {
+  grid-area: about;
+}
+
+.features {
+  grid-area: features;
+}
+
+.pricing {
+  grid-area: pricing;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.menu nav ul {
+  padding: 0;
+}
+
+.menu nav ul li {
+  display: inline-block;
+}
+
+.menu nav ul li a {
+  display: block;
+  padding: 1vh 1vw 1vh 0;
+  font-size: 1em;
+  text-decoration: none;
+  color: #000000;
+}
+
+.header .logo a img {
+  width: 10vh;
+}
+
+.banner {
+  position: relative;
+  background: url(./assets/banner.png) no-repeat;
+}
+
+.btn {
+  padding: 1em;
+  color: #fff;
+  text-decoration: none;
+  background: url(./assets/btn.png) repeat-x;
+}
+
+.on-github {
+  position: absolute;
+  top: 15em;
+}
+
+.about p {
+  text-align: center;
+  width: 60vw;
+  margin: auto;
+  margin-bottom: 2vh;
+}
+
+.features {
+  /*background: red;*/
+}
+
+.pricing {
+  padding-top: 15em;
+  background: url(./assets/pricing.png) no-repeat 10vw;
+}
+
+.pricing h1 {
+  text-align: center;
+  font-size: 1.6em;
+}
+
+
+
+
+
+@media all and (max-width: 575px) {
+}
+
+
+
+.carousel {
+  /*margin-left: 15%;
+  margin-right: 15%;*/
+}
+
+ul.slides {
+  display: block;
+  position: relative;
+  height: 725px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+.slides * {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+ul.slides input {
+  display: none; 
+}
+
+
+.slide-container { 
+  display: block; 
+}
+
+.slide-image {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  transition: all .7s ease-in-out;
+}   
+
+.slide-image img {
+  width: 100%;
+  /*min-width: 100%;*/
+  /*height: 100vh;*/
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  font-size: 100px;
+  line-height: 600px;
+  color: #fff;
+}
+
+.carousel-controls label {
+  display: none;
+  position: absolute;
+  padding: 0 20px;
+  opacity: 0;
+  transition: opacity .2s;
+  cursor: pointer;
+}
+
+.slide-image:hover + .carousel-controls label{
+  opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+  opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+  width: 49%;
+  text-align: left;
+  left: 0;
+  color: #cccccc;
+}
+
+.carousel-controls .next-slide {
+  width: 49%;
+  text-align: right;
+  right: 0;
+  color: #cccccc;
+}
+
+.carousel-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  z-index: 999;
+  text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #cccccc;
+  opacity: 0.5;
+  margin: 10px;
+}
+
+input:checked + .slide-container .slide-image {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .carousel-controls label {
+  display: block; 
+}
+
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+  opacity: 1;
+}
+
+
+input:checked + .slide-container .nav label { display: block; }

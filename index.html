@@ -1,9 +1,144 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TimeOff TS, Landing Page</title>
+  <title>Buying Intent</title>
+  <link href="https://fonts.googleapis.com/css?family=Manjari:100,400,700&display=swap&subset=malayalam" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 <body>
-  <h3>Timeoff TS Landing Page.</h3>
+  <div class="wrapper">
+    <header id="home" class="header menu global-padding">
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="logo">
+        <a href="/">
+          <img src="./assets/logo.png" alt="Timeoff">
+        </a>
+      </div>
+    </header>
+    <div id="banner" class="banner global-padding">
+      <a href="#" class="btn on-github">TimeOff TS On Github</a>
+    </div>
+    <article id="about" class="about global-padding">
+      <h1>About</h1>
+      <p>
+        TimeOff is an scheduler that allows companies and organizations to allow their employees to set vacations before they take their time off.TimeOff is an easy to use vacation setter with just few clicks.
+      </p>
+      <p>
+        TimeOff is completely open source meaning companies can use this project and set it up either internally or in the cloud for their use.
+      </p>
+      <p>
+        In addition, it is completely customizable i.e. companies can customize its user interface as well as can add new features or remove for their use.
+      </p>
+    </article>
+    <div id="features" class="features global-padding">
+      <h1>Features</h1>
+      <div class="carousel">
+        <ul class="slides">
+          <input type="radio" name="radio-buttons" id="img-1" checked />
+          <li class="slide-container">
+            <div class="slide-image">
+              <img src="./assets/UI.png">
+            </div>
+            <div class="carousel-controls">
+              <label for="img-3" class="prev-slide">
+                <span>&lsaquo;</span>
+              </label>
+              <label for="img-2" class="next-slide">
+                <span>&rsaquo;</span>
+              </label>
+            </div>
+          </li>
+          <input type="radio" name="radio-buttons" id="img-2" />
+          <li class="slide-container">
+            <div class="slide-image">
+              <img src="./assets/list.png">
+            </div>
+            <div class="carousel-controls">
+              <label for="img-1" class="prev-slide">
+                <span>&lsaquo;</span>
+              </label>
+              <label for="img-3" class="next-slide">
+                <span>&rsaquo;</span>
+              </label>
+            </div>
+          </li>
+          <input type="radio" name="radio-buttons" id="img-3" />
+          <li class="slide-container">
+            <div class="slide-image">
+              <img src="./assets/search.png">
+            </div>
+            <div class="carousel-controls">
+              <label for="img-2" class="prev-slide">
+                <span>&lsaquo;</span>
+              </label>
+              <label for="img-4" class="next-slide">
+                <span>&rsaquo;</span>
+              </label>
+            </div>
+          </li>
+          <input type="radio" name="radio-buttons" id="img-4" />
+          <li class="slide-container">
+            <div class="slide-image">
+              <img src="./assets/Past.png">
+            </div>
+            <div class="carousel-controls">
+              <label for="img-3" class="prev-slide">
+                <span>&lsaquo;</span>
+              </label>
+              <label for="img-5" class="next-slide">
+                <span>&rsaquo;</span>
+              </label>
+            </div>
+          </li>
+          <input type="radio" name="radio-buttons" id="img-5" />
+          <li class="slide-container">
+            <div class="slide-image">
+              <img src="./assets/dashboard.png">
+            </div>
+            <div class="carousel-controls">
+              <label for="img-4" class="prev-slide">
+                <span>&lsaquo;</span>
+              </label>
+              <label for="img-1" class="next-slide">
+                <span>&rsaquo;</span>
+              </label>
+            </div>
+          </li>
+          <!-- 
+          <div class="carousel-dots">
+            <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+            <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+            <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+            <label for="img-4" class="carousel-dot" id="img-dot-4"></label>
+            <label for="img-5" class="carousel-dot" id="img-dot-5"></label>
+          </div> 
+          -->
+        </ul>
+      </div>
+    </div>
+    <div id="pricing" class="pricing global-padding">
+      <h1>$1 Per Employee</h1>
+      <h1>Per Month</h1>
+    </div>
+    <footer id="footer" class="footer menu global-padding">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="mailto:timeoff.sendmail@gmail.com">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
 </body>
 </html>
