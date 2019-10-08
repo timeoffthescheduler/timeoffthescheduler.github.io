@@ -30,18 +30,10 @@ h1 {
   font-family: 'Manjari', sans-serif;
 }
 
-/*.wrapper > div, .wrapper > article, .wrapper > footer {
-  background: red;
-}*/
-
 .header {
   grid-area: header;
   display: grid;
   grid-template-columns: 1fr 100px;
-}
-
-.logo {
-  /*grid-area: logo;*/
 }
 
 .banner {
@@ -108,10 +100,6 @@ h1 {
   margin-bottom: 2vh;
 }
 
-.features {
-  /*background: red;*/
-}
-
 .pricing {
   padding-top: 15em;
   background: url(./assets/pricing.png) no-repeat 10vw;
@@ -122,18 +110,7 @@ h1 {
   font-size: 1.6em;
 }
 
-
-
-
-
 @media all and (max-width: 575px) {
-}
-
-
-
-.carousel {
-  /*margin-left: 15%;
-  margin-right: 15%;*/
 }
 
 ul.slides {
@@ -259,6 +236,5 @@ input#img-5:checked ~ .carousel-dots label#img-dot-5,
 input#img-6:checked ~ .carousel-dots label#img-dot-6 {
   opacity: 1;
 }
-
 
 input:checked + .slide-container .nav label { display: block; }
