@@ -66,7 +66,7 @@ form button {
     'features features'
     'pricing pricing'
     'footer footer';
-  grid-template-rows: 150px 625px 250px 880px 600px 100px;
+  grid-template-rows: 150px 625px 180px 880px 600px 100px;
   /*grid-template-columns: 1fr 100px;*/
   grid-gap: 10px;
   height: 100vh;
@@ -79,7 +79,16 @@ form button {
 .header {
   grid-area: header;
   display: grid;
+  grid-template-areas: 'nav logo';
   grid-template-columns: 1fr 100px;
+}
+
+.header .nav {
+  grid-area: nav;
+}
+
+.header .logo {
+  grid-area: logo;
 }
 
 .banner {
@@ -284,3 +293,96 @@ input#img-6:checked ~ .carousel-dots label#img-dot-6 {
 }
 
 input:checked + .slide-container .nav label { display: block; }
+
+@media all and (max-width: 2560px) {}
+
+@media all and (max-width: 1920px) {
+}
+
+@media all and (max-width: 1690px) {
+}
+
+@media screen and (max-width: 1280px) {
+  .wrapper {
+    width: 90vw;
+    grid-template-rows: 150px 625px 250px 720px 600px 100px;
+  }
+
+  form input {
+    width: 15vw;
+  }
+
+  .features {
+    /*padding-bottom: 111em !important;*/
+  }
+}
+
+
+@media screen and (max-width: 980px) {
+  .wrapper {
+    grid-template-rows: 150px 625px 250px 600px 600px 100px;
+  }
+
+  form {
+    right: 12px;
+  }
+
+  form input {
+    width: 20vw;
+  }
+
+  .pricing {
+    background: url(./assets/pricing.png) no-repeat 0vw 0vh;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .wrapper {
+    width: 99vw;
+    grid-template-rows: 150px 625px 250px 450px 600px 100px;
+  }
+
+  form input {
+    width: 25vw;
+  }
+
+  .about p {
+    width: 90vw;
+  }
+
+  .carousel-controls {
+    line-height: 330px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .wrapper {
+    grid-template-rows: 200px 625px 250px 380px 600px 100px;
+  }
+
+  .header {
+    text-align: center;
+    grid-template-areas: 
+    'logo'
+    'nav';
+    grid-template-columns: 1fr;
+  }
+
+  form input {
+    width: 35vw;
+  }
+
+  .about p {
+    width: 90vw;
+  }
+
+  .carousel-controls {
+    line-height: 330px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 420px) {
+}
