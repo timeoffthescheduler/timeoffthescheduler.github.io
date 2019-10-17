@@ -294,6 +294,20 @@ input#img-6:checked ~ .carousel-dots label#img-dot-6 {
 
 input:checked + .slide-container .nav label { display: block; }
 
+.footer {
+  position: relative;
+}
+
+.footer nav .socials {
+  position: absolute;
+  right: 0;
+  top: 1em;
+}
+
+.footer nav .socials a {
+  color: lightblue;
+}
+
 @media all and (max-width: 2560px) {}
 
 @media all and (max-width: 1920px) {
